@@ -11,6 +11,8 @@ nnoremap <F3> :CtrlP<CR>
 
 syntax on
 
+set nocompatible
+
 set background=dark
 
 " set line numbers color
