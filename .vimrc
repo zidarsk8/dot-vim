@@ -7,6 +7,7 @@ filetype plugin indent on
 filetype plugin on
 
 nnoremap <F5> :GundoToggle<CR>
+nnoremap <F3> :CtrlP<CR>
 
 syntax on
 
@@ -87,3 +88,6 @@ autocmd BufReadPost *
   \   exe "normal g`\"" |
   \ endif
 
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
+
+let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
