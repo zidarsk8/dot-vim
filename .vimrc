@@ -15,6 +15,10 @@ set nocompatible
 
 set background=dark
 
+" for vim-javascript
+set regexpengine=1
+syntax enable
+
 " set line numbers color
 hi LineNr ctermfg=darkcyan
 
