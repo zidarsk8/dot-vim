@@ -7,7 +7,7 @@ filetype plugin indent on
 filetype plugin on
 
 nnoremap <F5> :GundoToggle<CR>
-nnoremap <F3> :CtrlP<CR>
+nnoremap <F4> :CtrlP<CR>
 
 syntax on
 
@@ -94,9 +94,10 @@ autocmd BufReadPost *
   \   exe "normal g`\"" |
   \ endif
 
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc,*/mockups/*     " MacOSX/Linux
 
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 
 " jedi for python
 let g:jedi#use_tabs_not_buffers = 0
+
