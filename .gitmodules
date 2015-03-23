@@ -19,3 +19,9 @@
 [submodule "bundle/vim-colorschemes"]
 	path = bundle/vim-colorschemes
 	url = git@github.com:flazz/vim-colorschemes.git
+[submodule "bundle/ag"]
+	path = bundle/ag
+	url = git@github.com:rking/ag.vim.git
+[submodule "bundle/flake8"]
+	path = bundle/flake8
+	url = git@github.com:nvie/vim-flake8.git
