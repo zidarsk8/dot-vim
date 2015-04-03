@@ -1,5 +1,9 @@
 
 execute pathogen#infect()
+execute pathogen#helptags()
+
+
+syntax on
 
 " Enable file-type indentation
 filetype plugin indent on 
@@ -9,7 +13,6 @@ filetype plugin on
 nnoremap <F5> :GundoToggle<CR>
 nnoremap <F4> :CtrlP<CR>
 
-syntax on
 
 set nocompatible
 
@@ -101,3 +104,9 @@ let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 " jedi for python
 let g:jedi#use_tabs_not_buffers = 0
 
+" python mode tweeks
+let g:pymode_folding = 0
+let g:pymode_lint = 0
+let g:pymode_lint_on_write = 0
+"let g:pymode_lint_ignore = "E111,E121"
+let g:pymode_rope = 0
