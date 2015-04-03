@@ -28,3 +28,6 @@
 [submodule "bundle/python-mode"]
 	path = bundle/python-mode
 	url = git@github.com:klen/python-mode.git
+[submodule "bundle/autopep8"]
+	path = bundle/autopep8
+	url = git@github.com:tell-k/vim-autopep8.git
