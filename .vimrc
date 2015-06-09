@@ -13,6 +13,8 @@ filetype plugin on
 nnoremap <F5> :GundoToggle<CR>
 nnoremap <F4> :CtrlP<CR>
 
+set colorcolumn=80
+hi ColorColumn ctermbg=0
 
 set nocompatible
 
