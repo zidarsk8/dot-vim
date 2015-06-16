@@ -116,3 +116,5 @@ let g:pymode_rope = 0
 let g:autopep8_indent_size=2
 let g:autopep8_disable_show_diff=1
 let g:autopep8_max_line_length=79
+
+autocmd FileType python setlocal tabstop=2 softtabstop=2 shiftwidth=2
