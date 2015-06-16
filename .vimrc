@@ -99,7 +99,7 @@ autocmd BufReadPost *
   \   exe "normal g`\"" |
   \ endif
 
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc,*/mockups/*     " MacOSX/Linux
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.pyc     " MacOSX/Linux
 
 let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
 
