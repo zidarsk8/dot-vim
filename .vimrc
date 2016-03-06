@@ -1,4 +1,3 @@
-
 execute pathogen#infect()
 execute pathogen#helptags()
 
@@ -19,6 +18,8 @@ hi ColorColumn ctermbg=0
 set nocompatible
 
 set background=dark
+
+set spell
 
 " for vim-javascript
 set regexpengine=1
@@ -48,7 +49,7 @@ set showcmd
 " show matching braces
 set showmatch
 
-" highlight the searchterms
+" highlight the search terms
 set hlsearch
 
 " jump to the matches while typing
