@@ -34,11 +34,11 @@ set wrap
 " don't wrap words
 set textwidth=0
 
-" Tabs are 2 characters
-set tabstop=2
+" Tabs are 4 characters
+set tabstop=4
 
-" (Auto)indent uses 2 characters
-set shiftwidth=2
+" (Auto)indent uses 4 characters
+set shiftwidth=4
 
 " spaces instead of tabs
 set expandtab
@@ -114,11 +114,11 @@ let g:pymode_lint_on_write = 0
 "let g:pymode_lint_ignore = "E111,E121"
 let g:pymode_rope = 0
 
-let g:autopep8_indent_size=2
+let g:autopep8_indent_size=4
 let g:autopep8_disable_show_diff=1
 let g:autopep8_max_line_length=79
 
-autocmd FileType python setlocal tabstop=2 softtabstop=2 shiftwidth=2
+autocmd FileType python setlocal tabstop=4 softtabstop=4 shiftwidth=4
 
 " Show hidden files in Nerd Tree
 let NERDTreeShowHidden=1
