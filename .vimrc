@@ -119,3 +119,6 @@ let g:autopep8_disable_show_diff=1
 let g:autopep8_max_line_length=79
 
 autocmd FileType python setlocal tabstop=2 softtabstop=2 shiftwidth=2
+
+" Show hidden files in Nerd Tree
+let NERDTreeShowHidden=1
