@@ -1,0 +1,17 @@
+[user]
+	email = zidarsk8@gmail.com
+	name = Miha Zidar
+[alias] 
+  pr = "!f() { \
+    git checkout develop; \
+    git branch -D pr-$1; \
+    git fetch upstream develop:pr-$1; \
+    git checkout pr-$1; \
+    git fetch upstream pull/$1/head; \
+    git merge --no-ff FETCH_HEAD -m \"Automatic merge\"; \
+    }; f"
+  lg1 = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all
+  lg2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all
+  lg = !"git lg1"
+  tree = "forest --pretty=format:\"%C(red)%h %C(magenta)(%ar) %C(blue)%an %C(reset)%s\" --style=15 --reverse"
+  last = "!f() { git reflog | grep \"checkout:\" | awk ' { print $1 \" \" $8  } ' | uniq | head; }; f"
