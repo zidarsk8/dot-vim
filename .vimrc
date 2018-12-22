@@ -113,10 +113,7 @@ let g:pymode_lint = 0
 let g:pymode_lint_on_write = 0
 "let g:pymode_lint_ignore = "E111,E121"
 let g:pymode_rope = 0
-
-let g:autopep8_indent_size=4
-let g:autopep8_disable_show_diff=1
-let g:autopep8_max_line_length=79
+let g:syntastic_python_pylint_post_args="--max-line-length=90"
 
 autocmd FileType python setlocal tabstop=4 softtabstop=4 shiftwidth=4
 
